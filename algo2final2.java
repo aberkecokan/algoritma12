@@ -1,0 +1,30 @@
+
+package algo2final;
+
+import javax.swing.JOptionPane;
+public class algo2final2 {
+    public static void main(String[] args) {
+        String giris=JOptionPane.showInputDialog("İşlem seçiniz: 1=+ 2=- 3=* 4=/");
+        int secim=Integer.valueOf(giris);
+        String girilen1=JOptionPane.showInputDialog("1.sayıyı giriniz:");
+        double sayi1=Double.valueOf(girilen1);
+        String girilen2=JOptionPane.showInputDialog("2.sayıyı giriniz:");
+        double sayi2=Double.valueOf(girilen2);
+        if (secim==1) {
+            JOptionPane.showMessageDialog(null, (sayi1+sayi2));
+        }
+        else if(secim==2){
+        JOptionPane.showMessageDialog(null, (sayi1-sayi2));
+        }
+        else if(secim==3){
+        JOptionPane.showMessageDialog(null, (sayi1*sayi2));
+        
+        }
+        else if(secim==4){
+        JOptionPane.showMessageDialog(null,(sayi1/sayi2));
+        }
+        else{
+        JOptionPane.showMessageDialog(null,"1ve4 arasından sayı gırınız.");
+        }
+    }
+}

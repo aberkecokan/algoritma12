@@ -1,0 +1,4 @@
+
+public class sinifla1 {
+
+}
